@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>index file</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=" 200 "=device-width="200 ", initial-scale=1" align="left">
+    <link hr widthef="css/style.css" rel="stylesheet">
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        form {
+            margin: 50px 100px;
+        }
+        
+        input[type='text'] {
+            height: 30px;
+            width: 150px;
+        }
+        
+        input[type='checkbox'] {
+            margin-right: 5px;
+        }
+        
+        input[type='radio']:nth-of-type(2) {
+            margin-left: 20px;
+        }
+        
+        div {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        span {
+            width: 40px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        
+        .sign {
+            position: relative;
+            display: inline-block;
+            top: -50px;
+        }
+        
+        .save {
+            font-size: 16px;
+            color: #fff;
+            background-color: rgb(226, 37, 173);
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div>
+            <span>头像</span>
+            <input type="file"></label>
+        </div>
+        <div>
+            <span>昵称</span>
+            <input type="text" autofocus="autofocus"></label>
+        </div>
+        <div>
+            <span>学历</span>
+            <select>
+            <optgroup>
+                <option value="大专">大专</option>
+                <option value="本科">本科</option>
+            </optgroup>
+        </select>
+        </div>
+        <br>
+        <div>
+            <span>性别</span>
+            <input type="radio" name="sex" checked value="男">男
+            <input type="radio" name="sex" value="女">女
+        </div>
+        <div>
+            <span>爱好</span>
+            <input type="checkbox" checked value="电影">电影
+            <input type="checkbox" value="摄影">摄影
+            <input type="checkbox" value="音乐">音乐
+            <input type="checkbox" checked value="阅读">阅读
+        </div>
+        <div>
+            <span class="sign">签名</span>
+            <textarea rows="5" cols="40"></textarea>
+        </div>
+        <div>
+            <span></span>
+            <input class="save" type="submit" value="保存">
+        </div>
+    </form>
+</body>
+
+</html>

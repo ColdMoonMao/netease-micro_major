@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>index file</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=" 200 "=device-width="200 ", initial-scale=1" align="left">
+    <link hr widthef="css/style.css" rel="stylesheet">
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .slide {
+            width: 200px;
+            height: 100px;
+            background-color: rgb(176, 205, 234);
+            position: relative;
+        }
+        
+        .pointer {
+            display: inline-block;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            line-height: 0;
+        }
+        
+        i {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: black;
+            margin-left: 5px;
+        }
+        
+        i.current {
+            background: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide">
+        <!-- 图片省略 -->
+        <!-- 以下是指示器 -->
+        <div class="pointer"><i class="current"></i><i></i><i></i></div>
+    </div>
+</body>
+
+</html>
